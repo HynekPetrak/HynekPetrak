@@ -12,7 +12,7 @@ Since this version is vulnerble to CVE 2021-21972 and CVE-2021-21985 you may use
 to get low priviledge access (reverse shell) to the vsphere-ui user. For this version of vcenter the `vmware_vcenter_vsan_health_rce` seems to be more reliable, 
 alhough be patient, it usually succeeds in about 70% of attemtps only. If you don't get the reverse shell on the first attempt, just repeat the exploit:
 
-... TODO: picture ...
+![msf_vmware_vcenter_vsan_health_rce](msf_vmware_vcenter_vsan_health_rce.png)
 
 ### Escalating priviledges via CVE-2021-3156 (Sudo Baron Samedit)
 

@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Howto [take over vcenter 6.7 Update 3](take_over_vcenter_670.md)
+
 <!--
 **HynekPetrak/HynekPetrak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

@@ -1,6 +1,6 @@
 ## Taking over VMware Vcenter 6.7.0
 
-Chain of actions tested on `vCenter Appliance 6.7 Update 3 (6.7.0.40000)`
+Chain of actions tested on `vCenter Appliance 6.7 Update 3 (6.7.0.40000). Intended for research or pentersters only.
 
 ### Geting low priviledge access to vsphere-ui
 
@@ -75,7 +75,7 @@ The full username of the machine account is `cn=10.0.0.1,ou=Domain Controllers,d
 ### Creating own admin user on the vcenter
 
 The machine account cannot be used yet to logon to the vcenter, but we can use it for authentication to vsphere.local LDAP server and create our own admin 
-account with Metasploit's `auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass` module.
+account with Metasploit's `auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass` module. Leveraging some aspects of [CVE-2020-3952](https://www.vmware.com/security/advisories/VMSA-2020-0006.html), despite the fact the Vcenter is not vulnerable to the CVE-2020-3952 itself. 
 
 At the moment of writing the module needs to be adjusted with ... TODO: reference to the pull request .... 
 
@@ -113,4 +113,6 @@ Module options (auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass):
    USERNAME  Myadmin                                                no        Username of admin user to add
 ```
 
-You should get your new admin user `Myadmin@vsphere.local` created with password `NewPassword123#`. Now go to the https://10.0.0.1/ui and logon to the vcenter.
+You should get your new admin user `Myadmin@vsphere.local` created with password `NewPassword123#`. As a bonus you get password hashes of all the other vcenter users from vsphere.local domain.
+
+Now go to the https://10.0.0.1/ui and logon to the vcenter.

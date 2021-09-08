@@ -41,6 +41,10 @@ success at 8303
 
 At this point you may use `ssh gg@your-vcenter` to logon to vsphere appliance as a root.
 
+### Escalation priviledges via CVE-2021-xxxxx (not yet published)
+
+To be updated once disclosed by VMWare ...
+
 ### Geting credentials to vcenter
 
 Logged as root use the below script to get the password for machine account from vmdir's LDAP directory for `vsphere.local` domain:

@@ -66,7 +66,7 @@ def getMachineAccountCredentials():
 if __name__ == "__main__":
     print(getMachineAccountCredentials())
 ```
-Note: it does not work if run by `vsphere-ui` user.
+Note: it does not work if run by `vsphere-ui` user, it requires root priviledges.
 
 You obtain the user name and password:
 ```

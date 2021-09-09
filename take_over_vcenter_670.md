@@ -47,11 +47,10 @@ To be updated once disclosed by VMWare ...
 ### Geting credentials to vcenter
 
 Logged as root use the below script to get the password for machine account from vmdir's LDAP directory for `vsphere.local` domain:
-```
+```python
 #!/usr/bin/env python
-import os
+
 import sys
-import shutil
 
 sys.path.append('/usr/lib/vmware-vmafd/lib64')
 

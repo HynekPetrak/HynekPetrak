@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Howto [take over vcenter 6.7 Update 3](take_over_vcenter_670.md)
+How to [take over vcenter 6.7 Update 3](take_over_vcenter_670.md) chaining CVE 2021-21972, CVE-2021-21985, CVE-2021-3156 and CVE-2020-3952
 
 <!--
 **HynekPetrak/HynekPetrak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

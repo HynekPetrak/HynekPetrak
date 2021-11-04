@@ -18,3 +18,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<a href="https://github.com/jstrieb/github-stats">
+
+![](https://github.com/HynekPetrak/github-stats/blob/master/generated/overview.svg)
+![](https://github.com/HynekPetrak/github-stats/blob/master/generated/languages.svg)
+
+</a>

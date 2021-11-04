@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-How to [take over vcenter 6.7 Update 3](take_over_vcenter_670.md) chaining CVE 2021-21972, CVE-2021-21985, CVE-2021-3156 and CVE-2020-3952
+How to [take over vcenter (6.7 or 7.0)](take_over_vcenter_670.md) chaining CVE 2021-21972, CVE-2021-21985, CVE-2021-3156 and CVE-2020-3952
 
 - 🔭 Past researches on ... [CVE-2020-3952](https://www.vmware.com/security/advisories/VMSA-2020-0006.html), [CVE-2021-21991](https://www.vmware.com/security/advisories/VMSA-2021-0020.html)
 
